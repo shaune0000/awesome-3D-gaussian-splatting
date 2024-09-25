@@ -2431,7 +2431,15 @@ In this paper, we address the limitations of Adaptive Density Control (ADC) in 3
 </details>
 
   [📄 Paper](https://arxiv.org/pdf/2404.06109) 
-  
+
+### 6. # 3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt 
+**Authors**: [Lukas Höllein](https://niessnerlab.org/members/lukas_hoellein/profile.html), [Aljaž Božič](https://aljazbozic.github.io/), [Michael Zollhöfer](https://zollhoefer.com/), [Matthias Nießner](https://niessnerlab.org/members/matthias_niessner/profile.html), Technical University of Munich, 2Meta 
+<details span>
+<summary><b>Abstract</b></summary>
+We present 3DGS-LM, a new method that accelerates the reconstruction of 3D Gaussian Splatting (3DGS) by replacing its ADAM optimizer with a tailored LevenbergMarquardt (LM). Existing methods reduce the optimization time by decreasing the number of Gaussians or by improving the implementation of the differentiable rasterizer. However, they still rely on the ADAM optimizer to fit Gaussian parameters of a scene in thousands of iterations, which can take up to an hour. To this end, we change the optimizer to LM that runs in conjunction with the 3DGS differentiable rasterizer. For efficient GPU parallelization, we propose a caching data structure for intermediate gradients that allows us to efficiently calculate Jacobian-vector products in custom CUDA kernels. In every LM iteration, we calculate update directions from multiple image subsets using these kernels and combine them in a weighted mean. Overall, our method is 30% faster than the original 3DGS while obtaining the same reconstruction quality. Our optimization is also agnostic to other methods that accelerate 3DGS, thus enabling even faster speedups compared to vanilla 3DGS. 
+</details>
+
+  [📄 Paper](https://lukashoel.github.io/3DGS-LM/static/3DGS-LM_paper.pdf) | [🌐 Project Page](https://lukashoel.github.io/3DGS-LM/) | [💻 Code](https://github.com/lukasHoel/3DGS-LM)  | [▷ Video](https://youtu.be/tDiGuGMssg8) 
 ## 2023:
 ### 1. [CVPRW '24] Depth-Regularized Optimization for 3D Gaussian Splatting in Few-Shot Images 
 **Authors**: Jaeyoung Chung, Jeongtaek Oh, Kyoung Mu Lee 
