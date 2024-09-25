@@ -52,6 +52,9 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ **Sept 25, 2024**
+ - Added one paper:3DGS-LM
+
  **Sept 07, 2024**
  - Added one paper:MoDGS
  
@@ -2432,7 +2435,7 @@ In this paper, we address the limitations of Adaptive Density Control (ADC) in 3
 
   [📄 Paper](https://arxiv.org/pdf/2404.06109) 
 
-### 6. # 3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt 
+### 6. 3DGS-LM: Faster Gaussian-Splatting Optimization with Levenberg-Marquardt 
 **Authors**: [Lukas Höllein](https://niessnerlab.org/members/lukas_hoellein/profile.html), [Aljaž Božič](https://aljazbozic.github.io/), [Michael Zollhöfer](https://zollhoefer.com/), [Matthias Nießner](https://niessnerlab.org/members/matthias_niessner/profile.html), Technical University of Munich, 2Meta 
 <details span>
 <summary><b>Abstract</b></summary>
