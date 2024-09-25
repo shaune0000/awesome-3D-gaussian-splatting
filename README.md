@@ -52,6 +52,7 @@ A curated list of papers and open-source resources focused on 3D Gaussian Splatt
 <details span>
 <summary><b>Update Log:</b></summary>
 <br>
+ 
  **Sept 25, 2024**
  - Added one paper:3DGS-LM
 
